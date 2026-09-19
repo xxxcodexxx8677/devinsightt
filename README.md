@@ -14,8 +14,8 @@ The automated benchmark suite (`bin/devinsight_benchmark.exe`) measures real sys
 
 | Metric | Raw Standard Baseline | DevInsight Engine | Result |
 | :--- | :--- | :--- | :--- |
-| **Allocation Latency** | 16.40 ms (100k ops) | 53.91 ms (100k ops) | **375 ns** overhead / operation |
-| **Task Throughput** | 15.91 ms (`std::thread`) | 1.12 ms (Worker Pool) | **14.18x FASTER** (178,253 tasks/sec) |
+| **Allocation Latency** | 6.73 ms (100k ops) | 27.06 ms (100k ops) | **203 ns** overhead / operation |
+| **Task Throughput** | 22.23 ms (`std::thread`) | 0.95 ms (Worker Pool) | **23.41x FASTER** (210,526 tasks/sec) |
 | **Priority Inversion** | FIFO queuing | Priority Queue (`TaskPriority`) | **CRITICAL tasks preempt LOW tasks** |
 
 ---
